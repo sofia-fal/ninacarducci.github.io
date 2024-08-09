@@ -12,7 +12,25 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
 	<meta charset="UTF-8">
-	<title>Nina Carducci - Photographe professionnelle</title>
+
+	<!-- Référencement -->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:description" content="Découvrez les services de photographie professionnelle à Bordeaux, avec des tarifs allant de 50 à 400 euros." />
+	<meta property="og:image" content="https://sofia-fal.github.io/ninacarducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1_11zon.webp" />
+	<meta property="og:url" content="https://sofia-fal.github.io/ninacarducci.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:site_name" content="Nina Carducci" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta name="twitter:description" content="Découvrez les services de photographie professionnelle à Bordeaux, avec des tarifs allant de 50 à 400 euros." />
+	<meta name="twitter:image" content="https://sofia-fal.github.io/ninacarducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1_11zon.webp" />
+	<meta name="twitter:url" content="https://sofia-fal.github.io/ninacarducci.github.io/" />
+
+	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
+	<meta name="description" content="Nina Carducci, photographe professionnelle basée à Bordeaux.">
+
 </head>
 
 <body>
@@ -92,31 +110,31 @@
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concert-1.webp"
-						alt="Photo d'un concert" />
+						alt="Photo d'un concert" loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-1.webp"
-						alt="Photo d'homme en entreprise" />
+						alt="Photo d'homme en entreprise" loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-2.webp"
-						alt="Photo d'une femme en entreprise" />
+						alt="Photo d'une femme en entreprise" loading="lazy" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/mariage-1.webp"
-						alt="Photo de mains unies" />
+						alt="Photo de mains unies" loading="lazy" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/portrait-1.webp"
-						alt="Portrait d'un homme" />
+						alt="Portrait d'un homme" loading="lazy" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/mariage-2.webp"
-						alt="Photo d'un couple de mariés" />
+						alt="Photo d'un couple de mariés" loading="lazy" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/portrait-2.webp"
-						alt="Portrait d'une femme" />
+						alt="Portrait d'une femme" loading="lazy" />
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concert-2.webp"
-						alt="Photo d'un concert" />
+						alt="Photo d'un concert" loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-3.webp"
-						alt="Photo d'une femme en entreprise" />
+						alt="Photo d'une femme en entreprise" loading="lazy" />
 				</div>
 			</div>
 			<div class="quote">
@@ -196,7 +214,7 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp" alt="Photo de caméra">
+					<img src="./assets/images/camera.webp" alt="Photo de caméra" loading="lazy">
 				</div>
 			</div>
 		</div>
@@ -208,6 +226,51 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Photographer",
+	  "name": "Nina Carducci",
+	  "url": "https://sofia-fal.github.io/ninacarducci.github.io/",
+	  "image": {
+	    "@type": "ImageObject",
+	    "url": "https://sofia-fal.github.io/ninacarducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1_11zon.webp",
+	    "height": 600,
+	    "width": 800
+	  },
+	  "address": {
+	    "@type": "PostalAddress",
+	    "streetAddress": "68 avenue Alsace-Lorraine",
+	    "addressLocality": "Bordeaux",
+	    "postalCode": "33200",
+	    "addressCountry": "FR"
+	  },
+	  "contactPoint": {
+	    "@type": "ContactPoint",
+	    "telephone": "+33-5-56-67-78-89",
+	    "contactType": "Service Client",
+	    "areaServed": "FR",
+	    "availableLanguage": ["Français"],
+	    "hoursAvailable": {
+	      "@type": "OpeningHoursSpecification",
+	      "dayOfWeek": [
+	        "Monday",
+	        "Tuesday",
+	        "Wednesday",
+	        "Thursday",
+	        "Friday"
+	      ],
+	      "opens": "10:00",
+	      "closes": "19:00"
+	    }
+	  },
+	  "priceRange": "50-400 EUR",
+	  "sameAs": [
+	    "https://www.instagram.com/ninacarducci.photo/",
+	  ]
+	}
+	</script>
+
 </body>
 
 </html>
