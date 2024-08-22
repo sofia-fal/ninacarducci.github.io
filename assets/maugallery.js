@@ -1,4 +1,4 @@
-class MauGallery{constructor(element,options){this.element=element;this.options=Object.assign(MauGallery.defaults,options);this.tagsCollection=[];this.createRowWrapper();if(this.options.lightBox){this.createLightBox()}
+class mauGallery{constructor(element,options){this.element=element;this.options=Object.assign(mauGallery.defaults,options);this.tagsCollection=[];this.createRowWrapper();if(this.options.lightBox){this.createLightBox()}
 this.addListeners();this.element.querySelectorAll(".gallery-item").forEach((item)=>{this.responsiveImageItem(item);this.moveItemInRowWrapper(item);this.wrapItemInColumn(item);const theTag=item.dataset.galleryTag;if(this.options.showTags&&theTag!==undefined&&!this.tagsCollection.includes(theTag)){this.tagsCollection.push(theTag)}});if(this.options.showTags){this.showItemTags()}
 this.element.style.display='block'}
 static get defaults(){return{columns:3,lightBox:!0,lightboxId:null,showTags:!0,tagsPosition:"bottom",navigation:!0}}
@@ -25,4 +25,4 @@ createLightBox(){const lightboxId=this.options.lightboxId||"galleryLightbox";con
     `;this.element.appendChild(modal)}
 showItemTags(){let tagItems=`<li class="nav-item"><span class="nav-link active active-tag" data-images-toggle="all">Tous</span></li>`;this.tagsCollection.forEach(value=>{tagItems+=`<li class="nav-item"><span class="nav-link" data-images-toggle="${value}">${value}</span></li>`});const tagsRow=`<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;this.element.insertAdjacentHTML('afterbegin',tagsRow)}
 filterByTag(e){const target=e.target;if(target.classList.contains("active-tag"))return;document.querySelector(".active-tag").classList.remove("active","active-tag");target.classList.add("active-tag","active");const tag=target.dataset.imagesToggle;document.querySelectorAll(".gallery-item").forEach((item)=>{const parentColumn=item.closest(".item-column");parentColumn.style.display="none";if(tag==="all"||item.dataset.galleryTag===tag){parentColumn.style.display="block"}})}}
-const galleryElement=document.querySelector('.gallery');const gallery=new MauGallery(galleryElement,{columns:4,lightBox:!0,showTags:!0,navigation:!0})
+const galleryElement=document.querySelector('.gallery');const gallery=new mauGallery(galleryElement,{columns:4,lightBox:!0,showTags:!0,navigation:!0})
